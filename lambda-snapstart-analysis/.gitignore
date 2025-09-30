@@ -1,0 +1,213 @@
+# Lambda SnapStart Analysis Project .gitignore
+
+# ===========================================
+# Java Build Artifacts
+# ===========================================
+# Maven build directory
+target/
+!target/.gitkeep
+
+# Compiled class files
+*.class
+
+# JAR files (except final deployment JAR if needed)
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# ===========================================
+# IDE Files
+# ===========================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ===========================================
+# Performance Test Results
+# ===========================================
+# Test results directory (organized by timestamp)
+test-results/
+
+# Legacy test files (if any remain in root)
+test*.json
+baseline_test_*.json
+snapstart_test_*.json
+*_test_*.json
+
+# Performance reports
+performance-test-results.csv
+performance-summary.txt
+performance-results.json
+
+# ===========================================
+# AWS & Lambda Deployment
+# ===========================================
+# AWS CLI credentials (if accidentally placed in project)
+.aws/
+credentials
+config
+
+# Lambda deployment packages
+*.zip
+lambda-*.jar
+deployment/*.jar
+!deployment/.gitkeep
+
+# CloudFormation stack outputs
+stack-outputs.json
+cfn-outputs.json
+
+# Terraform files (if used for infrastructure)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+
+# ===========================================
+# Environment & Configuration
+# ===========================================
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuration files with secrets
+*-config.json
+*-secrets.json
+application-local.properties
+application-dev.properties
+
+# ===========================================
+# Logs & Temporary Files
+# ===========================================
+# Log files
+*.log
+logs/
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===========================================
+# PowerShell & Scripts
+# ===========================================
+# PowerShell execution policy bypass files
+*.ps1.backup
+
+# Script output files
+script-output.txt
+execution-log.txt
+
+# ===========================================
+# Documentation & Reports
+# ===========================================
+# Generated documentation
+/docs/generated/
+/javadoc/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# ===========================================
+# Performance Analysis Tools
+# ===========================================
+# JVM profiling
+*.hprof
+*.jfr
+
+# Performance monitoring
+jmeter-results/
+gatling-results/
+
+# ===========================================
+# Package Managers & Dependencies
+# ===========================================
+# Node.js (if used for tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if used for scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# ===========================================
+# Security & Sensitive Data
+# ===========================================
+# API keys and secrets
+*.key
+*.pem
+*.p12
+*.jks
+keystore
+truststore
+
+# AWS specific
+*.pem
+*.ppk
+
+# ===========================================
+# Keep Important Files
+# ===========================================
+# Ensure these are NOT ignored
+!pom.xml
+!README.md
+!performance-test.ps1
+!cloudwatch-dashboard.json
+!src/
+!deployment/.gitkeep
+
+# ===========================================
+# Custom Project Specific
+# ===========================================
+# Add any project-specific files here
