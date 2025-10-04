@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "num_requests": 56,
+    "total_request_cost": 1.1200000000000001e-05,
+    "total_duration_cost": 9.090851515e-06,
+    "total_cost": 2.0290851515e-05,
+    "cost_per_request": 3.623366341964286e-07,
+    "avg_latency_ms": 3898.537857142857,
+    "cost_efficiency_ratio": 9.294167389770489e-11
+  },
+  "snapstart": {
+    "num_requests": 56,
+    "total_request_cost": 1.1200000000000001e-05,
+    "total_duration_cost": 9.956186578999998e-06,
+    "total_cost": 2.1156186578999997e-05,
+    "cost_per_request": 3.7778904605357137e-07,
+    "avg_latency_ms": 3460.0360714285716,
+    "cost_efficiency_ratio": 1.0918644726660052e-10
+  }
+}

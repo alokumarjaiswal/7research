@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "invocations": "60",
+    "avgDuration": "12.1812",
+    "minDuration": "10.91",
+    "maxDuration": "20.45",
+    "p50Duration": "11.45",
+    "p90Duration": "14.1",
+    "p95Duration": "15.45",
+    "p99Duration": "20.45",
+    "avgMemoryMB": "205.0241",
+    "maxMemoryMB": "205.9937"
+  },
+  "snapstart": {
+    "invocations": "61",
+    "avgDuration": "25.5821",
+    "minDuration": "11.03",
+    "maxDuration": "245.31",
+    "p50Duration": "11.86",
+    "p90Duration": "33.18",
+    "p95Duration": "48.57",
+    "p99Duration": "245.31",
+    "avgMemoryMB": "205.0869",
+    "maxMemoryMB": "205.9937"
+  }
+}

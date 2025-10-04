@@ -1,0 +1,81 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Lambda SnapStart Research - ML Inference Workload
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 1024
+    Tracing: Active
+    Environment:
+      Variables:
+        MODEL_PATH: /opt/models
+
+Resources:
+  # Lambda function WITHOUT SnapStart (baseline)
+  MLInferenceBaseline:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: ml-inference-baseline
+      CodeUri: src/
+      Handler: app.lambda_handler
+      Runtime: python3.12
+      Architectures:
+        - x86_64
+      Environment:
+        Variables:
+          FUNCTION_TYPE: baseline
+      Events:
+        InferenceAPI:
+          Type: Api
+          Properties:
+            Path: /predict/baseline
+            Method: post
+
+  # Lambda function WITH SnapStart (optimized)
+  MLInferenceSnapStart:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: ml-inference-snapstart
+      CodeUri: src/
+      Handler: app.lambda_handler
+      Runtime: python3.12
+      Architectures:
+        - x86_64
+      AutoPublishAlias: live
+      SnapStart:
+        ApplyOn: PublishedVersions
+      Environment:
+        Variables:
+          FUNCTION_TYPE: snapstart
+      Events:
+        InferenceAPI:
+          Type: Api
+          Properties:
+            Path: /predict/snapstart
+            Method: post
+
+Outputs:
+  BaselineAPI:
+    Description: "API Gateway endpoint for baseline function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/predict/baseline"
+  
+  SnapStartAPI:
+    Description: "API Gateway endpoint for SnapStart function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/predict/snapstart"
+  
+  BaselineFunctionArn:
+    Description: "Baseline Lambda Function ARN"
+    Value: !GetAtt MLInferenceBaseline.Arn
+  
+  SnapStartFunctionArn:
+    Description: "SnapStart Lambda Function ARN"
+    Value: !GetAtt MLInferenceSnapStart.Arn
+  
+  BaselineLogGroup:
+    Description: "CloudWatch Log Group for Baseline"
+    Value: !Sub "/aws/lambda/${MLInferenceBaseline}"
+  
+  SnapStartLogGroup:
+    Description: "CloudWatch Log Group for SnapStart"
+    Value: !Sub "/aws/lambda/${MLInferenceSnapStart}"

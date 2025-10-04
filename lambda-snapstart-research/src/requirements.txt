@@ -1,0 +1,5 @@
+scikit-learn
+numpy
+joblib
+boto3
+aws-xray-sdk

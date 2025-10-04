@@ -1,0 +1,82 @@
+{
+  "100ms": {
+    "baseline": {
+      "overall_compliance": 0.0,
+      "cold_start_compliance": 0.0,
+      "warm_start_compliance": 0.0,
+      "requests_meeting_slo": 0,
+      "total_requests": 56
+    },
+    "snapstart": {
+      "overall_compliance": 0.0,
+      "cold_start_compliance": 0.0,
+      "warm_start_compliance": 0.0,
+      "requests_meeting_slo": 0,
+      "total_requests": 56
+    }
+  },
+  "500ms": {
+    "baseline": {
+      "overall_compliance": 0.0,
+      "cold_start_compliance": 0.0,
+      "warm_start_compliance": 0.0,
+      "requests_meeting_slo": 0,
+      "total_requests": 56
+    },
+    "snapstart": {
+      "overall_compliance": 0.0,
+      "cold_start_compliance": 0.0,
+      "warm_start_compliance": 0.0,
+      "requests_meeting_slo": 0,
+      "total_requests": 56
+    }
+  },
+  "1000ms": {
+    "baseline": {
+      "overall_compliance": 0.0,
+      "cold_start_compliance": 0.0,
+      "warm_start_compliance": 0.0,
+      "requests_meeting_slo": 0,
+      "total_requests": 56
+    },
+    "snapstart": {
+      "overall_compliance": 1.7857142857142856,
+      "cold_start_compliance": 0.0,
+      "warm_start_compliance": 1.8867924528301887,
+      "requests_meeting_slo": 1,
+      "total_requests": 56
+    }
+  },
+  "2000ms": {
+    "baseline": {
+      "overall_compliance": 33.92857142857143,
+      "cold_start_compliance": 0.0,
+      "warm_start_compliance": 38.775510204081634,
+      "requests_meeting_slo": 19,
+      "total_requests": 56
+    },
+    "snapstart": {
+      "overall_compliance": 44.642857142857146,
+      "cold_start_compliance": 0.0,
+      "warm_start_compliance": 47.16981132075472,
+      "requests_meeting_slo": 25,
+      "total_requests": 56
+    }
+  },
+  "5000ms": {
+    "baseline": {
+      "overall_compliance": 64.28571428571429,
+      "cold_start_compliance": 28.57142857142857,
+      "warm_start_compliance": 69.38775510204081,
+      "requests_meeting_slo": 36,
+      "total_requests": 56
+    },
+    "snapstart": {
+      "overall_compliance": 71.42857142857143,
+      "cold_start_compliance": 33.33333333333333,
+      "warm_start_compliance": 73.58490566037736,
+      "requests_meeting_slo": 40,
+      "total_requests": 56
+    }
+  }
+}

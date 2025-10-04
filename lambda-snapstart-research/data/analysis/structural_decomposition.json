@@ -1,0 +1,90 @@
+{
+  "baseline": {
+    "cold_start": {
+      "total_latency": {
+        "mean": 6444.591428571429,
+        "std": 1435.4109775534505,
+        "median": 7082.49
+      },
+      "model_load_time": {
+        "mean": 3542.3300000000004,
+        "std": 180.90150054656812
+      },
+      "inference_time": {
+        "mean": 10.651428571428571,
+        "std": 0.43537066856601514
+      },
+      "handler_time": {
+        "mean": 10.672857142857143,
+        "std": 0.4366048665828288
+      },
+      "network_overhead": {
+        "mean": 6433.918571428571
+      }
+    },
+    "warm_start": {
+      "total_latency": {
+        "mean": 3534.8159183673465,
+        "std": 2060.9534091823843,
+        "median": 2593.43,
+        "p95": 6279.026,
+        "p99": 6375.4444
+      },
+      "inference_time": {
+        "mean": 9.584897959183674,
+        "std": 1.0152752550601316
+      },
+      "handler_time": {
+        "mean": 9.606938775510203,
+        "std": 1.0165140679499405
+      },
+      "network_overhead": {
+        "mean": 3525.2089795918364
+      }
+    }
+  },
+  "snapstart": {
+    "cold_start": {
+      "total_latency": {
+        "mean": 5483.366666666666,
+        "std": 727.801463129426,
+        "median": 5134.58
+      },
+      "model_load_time": {
+        "mean": 4960.3,
+        "std": 0.0
+      },
+      "inference_time": {
+        "mean": 26.8,
+        "std": 8.955713260260179
+      },
+      "handler_time": {
+        "mean": 26.87,
+        "std": 8.955713260260179
+      },
+      "network_overhead": {
+        "mean": 5456.496666666666
+      }
+    },
+    "warm_start": {
+      "total_latency": {
+        "mean": 3345.5079245283023,
+        "std": 2011.1292728477763,
+        "median": 2798.68,
+        "p95": 6255.82,
+        "p99": 6291.6176
+      },
+      "inference_time": {
+        "mean": 9.72698113207547,
+        "std": 1.2933358551639014
+      },
+      "handler_time": {
+        "mean": 9.750188679245284,
+        "std": 1.2928970013203767
+      },
+      "network_overhead": {
+        "mean": 3335.757735849057
+      }
+    }
+  }
+}

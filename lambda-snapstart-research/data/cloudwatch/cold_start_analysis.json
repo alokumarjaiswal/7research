@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "totalInvocations": "60",
+    "coldStarts": "9",
+    "avgInitDuration": "4735.4589",
+    "maxInitDuration": "4975.38",
+    "avgDuration": "12.1812",
+    "maxDuration": "20.45",
+    "avgMemoryUsedMB": "205.0241"
+  },
+  "snapstart": {
+    "totalInvocations": "61",
+    "avgDuration": "25.5821",
+    "maxDuration": "245.31",
+    "avgMemoryUsedMB": "205.0869"
+  }
+}

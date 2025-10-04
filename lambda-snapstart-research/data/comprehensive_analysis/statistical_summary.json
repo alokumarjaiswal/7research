@@ -1,0 +1,26 @@
+{
+  "dataset_overview": {
+    "total_invocations": 438,
+    "baseline_invocations": 219,
+    "snapstart_invocations": 219,
+    "memory_configurations_tested": [
+      512,
+      1024,
+      2048
+    ],
+    "cold_starts_total": 32,
+    "warm_starts_total": 406
+  },
+  "overall_performance": {
+    "baseline": {
+      "mean_latency_ms": 2275.060091324201,
+      "median_latency_ms": 1453.98,
+      "p95_latency_ms": 7161.84
+    },
+    "snapstart": {
+      "mean_latency_ms": 1513.6790410958902,
+      "median_latency_ms": 1424.15,
+      "p95_latency_ms": 1770.113
+    }
+  }
+}

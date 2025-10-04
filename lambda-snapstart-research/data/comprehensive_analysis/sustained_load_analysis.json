@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "invocations": 99,
+    "mean_latency_ms": 1628.7787878787883,
+    "median_latency_ms": 1457.06,
+    "std_latency_ms": 734.2455865150864,
+    "min_latency_ms": 1003.58,
+    "max_latency_ms": 7151.13,
+    "p50_ms": 1457.06,
+    "p90_ms": 1989.7440000000001,
+    "p95_ms": 2477.720999999999,
+    "p99_ms": 4606.92259999999
+  },
+  "snapstart": {
+    "invocations": 99,
+    "mean_latency_ms": 1470.5503030303025,
+    "median_latency_ms": 1416.93,
+    "std_latency_ms": 505.08141771129755,
+    "min_latency_ms": 960.93,
+    "max_latency_ms": 5921.05,
+    "p50_ms": 1416.93,
+    "p90_ms": 1578.26,
+    "p95_ms": 1747.7299999999998,
+    "p99_ms": 2722.976799999987
+  }
+}

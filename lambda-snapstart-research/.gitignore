@@ -1,0 +1,5 @@
+.venv/
+model.joblib
+__pycache__/
+.aws-sam/build/MLInferenceBaseline/
+.aws-sam/build/MLInferenceSnapStart/

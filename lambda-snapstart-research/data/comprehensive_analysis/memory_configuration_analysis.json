@@ -1,0 +1,134 @@
+{
+  "512MB": {
+    "baseline": {
+      "total_invocations": 40,
+      "cold_starts": {
+        "count": 10,
+        "mean_latency_ms": 7069.115,
+        "median_latency_ms": 7067.24,
+        "std_latency_ms": 268.3733162861845,
+        "min_latency_ms": 6516.83,
+        "max_latency_ms": 7387.85
+      },
+      "warm_starts": {
+        "count": 30,
+        "mean_latency_ms": 1421.7653333333333,
+        "median_latency_ms": 1429.52,
+        "p50_ms": 1429.52,
+        "p90_ms": 1491.912,
+        "p95_ms": 1596.4659999999997,
+        "p99_ms": 3377.472300000002,
+        "std_latency_ms": 540.4683299454492
+      }
+    },
+    "snapstart": {
+      "total_invocations": 40,
+      "cold_starts": {
+        "count": 1,
+        "mean_latency_ms": 2210.88,
+        "median_latency_ms": 2210.88,
+        "std_latency_ms": NaN,
+        "min_latency_ms": 2210.88,
+        "max_latency_ms": 2210.88
+      },
+      "warm_starts": {
+        "count": 39,
+        "mean_latency_ms": 1422.9235897435897,
+        "median_latency_ms": 1444.05,
+        "p50_ms": 1444.05,
+        "p90_ms": 1624.268,
+        "p95_ms": 1669.99,
+        "p99_ms": 1759.5399999999997,
+        "std_latency_ms": 179.13706161671118
+      }
+    }
+  },
+  "1024MB": {
+    "baseline": {
+      "total_invocations": 139,
+      "cold_starts": {
+        "count": 11,
+        "mean_latency_ms": 7094.330000000001,
+        "median_latency_ms": 7160.87,
+        "std_latency_ms": 219.0711982895057,
+        "min_latency_ms": 6630.64,
+        "max_latency_ms": 7342.07
+      },
+      "warm_starts": {
+        "count": 128,
+        "mean_latency_ms": 1545.1950781250002,
+        "median_latency_ms": 1451.09,
+        "p50_ms": 1451.09,
+        "p90_ms": 1808.1989999999994,
+        "p95_ms": 2372.8494999999994,
+        "p99_ms": 3777.5105000000026,
+        "std_latency_ms": 462.2662358442033
+      }
+    },
+    "snapstart": {
+      "total_invocations": 139,
+      "cold_starts": {
+        "count": 0,
+        "mean_latency_ms": 0,
+        "median_latency_ms": 0,
+        "std_latency_ms": 0,
+        "min_latency_ms": 0,
+        "max_latency_ms": 0
+      },
+      "warm_starts": {
+        "count": 139,
+        "mean_latency_ms": 1557.8299280575538,
+        "median_latency_ms": 1422.06,
+        "p50_ms": 1422.06,
+        "p90_ms": 1615.95,
+        "p95_ms": 1791.3329999999994,
+        "p99_ms": 4680.980800000015,
+        "std_latency_ms": 1036.390983719707
+      }
+    }
+  },
+  "2048MB": {
+    "baseline": {
+      "total_invocations": 40,
+      "cold_starts": {
+        "count": 10,
+        "mean_latency_ms": 6725.185,
+        "median_latency_ms": 6459.445,
+        "std_latency_ms": 498.42957954069215,
+        "min_latency_ms": 6250.4,
+        "max_latency_ms": 7537.75
+      },
+      "warm_starts": {
+        "count": 30,
+        "mean_latency_ms": 1393.986666666667,
+        "median_latency_ms": 1420.375,
+        "p50_ms": 1420.375,
+        "p90_ms": 1500.6030000000003,
+        "p95_ms": 1709.2569999999998,
+        "p99_ms": 1751.4393,
+        "std_latency_ms": 189.57166490099024
+      }
+    },
+    "snapstart": {
+      "total_invocations": 40,
+      "cold_starts": {
+        "count": 0,
+        "mean_latency_ms": 0,
+        "median_latency_ms": 0,
+        "std_latency_ms": 0,
+        "min_latency_ms": 0,
+        "max_latency_ms": 0
+      },
+      "warm_starts": {
+        "count": 40,
+        "mean_latency_ms": 1431.31125,
+        "median_latency_ms": 1423.355,
+        "p50_ms": 1423.355,
+        "p90_ms": 1561.055,
+        "p95_ms": 1590.385,
+        "p99_ms": 2102.4409999999993,
+        "std_latency_ms": 217.73378308934383
+      }
+    }
+  }
+}
