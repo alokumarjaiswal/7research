@@ -1,0 +1,125 @@
+{
+  "overall_performance": {
+    "sample_sizes": {
+      "baseline": 219,
+      "snapstart": 219
+    },
+    "descriptive_stats": {
+      "baseline": {
+        "mean": 2275.060091324201,
+        "median": 1453.98,
+        "std": 1959.07521433437,
+        "min": 966.22,
+        "max": 7537.75
+      },
+      "snapstart": {
+        "mean": 1513.6790410958902,
+        "median": 1424.15,
+        "std": 836.7824088994532,
+        "min": 960.93,
+        "max": 12562.32
+      }
+    },
+    "levene_test": {
+      "statistic": 29.261004542064182,
+      "p_value": 1.045061378466481e-07,
+      "equal_variances": false
+    },
+    "t_test": {
+      "statistic": 5.289117784909549,
+      "p_value": 2.3988699479902276e-07,
+      "significant": true,
+      "interpretation": "Highly significant"
+    },
+    "mann_whitney_test": {
+      "statistic": 29699.0,
+      "p_value": 1.5833229102035702e-05,
+      "significant": true,
+      "interpretation": "Highly significant"
+    },
+    "effect_size": {
+      "cohens_d": 0.5054476468212479,
+      "interpretation": "Medium"
+    }
+  },
+  "cold_start_performance": {
+    "sample_sizes": {
+      "baseline": 31,
+      "snapstart": 1
+    },
+    "descriptive_stats": {
+      "baseline": {
+        "mean": 6967.117096774193,
+        "std": 375.56135364006366
+      },
+      "snapstart": {
+        "mean": 2210.88,
+        "std": NaN
+      }
+    },
+    "t_test": {
+      "statistic": 12.4648902195617,
+      "p_value": 2.1459330542090677e-13,
+      "significant": true
+    },
+    "mann_whitney_test": {
+      "statistic": 31.0,
+      "p_value": 0.0625,
+      "significant": false
+    },
+    "effect_size": {
+      "cohens_d": NaN
+    }
+  },
+  "warm_start_performance": {
+    "sample_sizes": {
+      "baseline": 188,
+      "snapstart": 218
+    },
+    "descriptive_stats": {
+      "baseline": {
+        "mean": 1501.3698404255322,
+        "std": 447.41553059143234
+      },
+      "snapstart": {
+        "mean": 1510.4808715596328,
+        "std": 837.3656503339174
+      }
+    },
+    "t_test": {
+      "statistic": -0.1336270953652487,
+      "p_value": 0.8937639947241942,
+      "significant": false
+    },
+    "mann_whitney_test": {
+      "statistic": 22932.0,
+      "p_value": 0.03853417962438849,
+      "significant": true
+    },
+    "effect_size": {
+      "cohens_d": -0.013299961189635435
+    }
+  },
+  "memory_configuration_effects": {
+    "baseline": {
+      "f_statistic": 4.349259240524766,
+      "p_value": 0.014066386809196665,
+      "significant": true,
+      "memory_configs": [
+        512,
+        1024,
+        2048
+      ]
+    },
+    "snapstart": {
+      "f_statistic": 0.5291861216238513,
+      "p_value": 0.589845955140524,
+      "significant": false,
+      "memory_configs": [
+        512,
+        1024,
+        2048
+      ]
+    }
+  }
+}

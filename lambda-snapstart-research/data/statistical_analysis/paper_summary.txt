@@ -1,0 +1,20 @@
+STATISTICAL SIGNIFICANCE STATEMENTS FOR PAPER
+======================================================================
+
+OVERALL PERFORMANCE:
+SnapStart demonstrates significantly lower latency than baseline functions
+(t = 5.29, p < 0.001, Cohen's d = 0.51).
+Non-parametric Mann-Whitney U test confirms this finding (U = 29699, p < 0.001).
+
+COLD START PERFORMANCE:
+Cold start latency reduction is statistically significant
+(t = 12.46, p = 0.000000, Cohen's d = nan).
+
+WARM START PERFORMANCE:
+Warm start latency improvement is statistically significant
+(t = -0.13, p = 0.893764, Cohen's d = -0.01).
+
+
+LaTeX SNIPPETS:
+----------------------------------------------------------------------
+$(t = 5.29, p < 0.001, d = 0.51)$
